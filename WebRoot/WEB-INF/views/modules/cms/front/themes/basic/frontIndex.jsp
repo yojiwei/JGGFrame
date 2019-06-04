@@ -94,7 +94,7 @@
 									</ul>
 					</div>
 					
-					<div class="c_box box5">
+					<div class="c_box box6">
 						<div class="box_tit box4_tit">
 							<img src="${ctxStatic}/images/dd2.png">
 							<p>金桥要闻</p>

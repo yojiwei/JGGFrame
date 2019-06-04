@@ -36,7 +36,7 @@
 		</div>
 		<img src="${ctxStatic}/images/top_banner.jpg" />
 		<div class="menu_div">
-			<a href="../f" class="select">首 页</a>
+			<a href="${pageContext.request.contextPath}/f" class="select">首 页</a>
 			<c:forEach items="${fnc:getMainNavList(site.id)}" var="category"
 				varStatus="status">
 				<c:if test="${status.index lt 7}">
