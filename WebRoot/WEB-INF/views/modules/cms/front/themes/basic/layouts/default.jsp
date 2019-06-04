@@ -31,8 +31,7 @@
 		<div class="t_top">
 			<p class="p1">欢迎来到金桥政务网！</p><p class="p1">${fns:getDate('yyyy年MM月dd日 E')}</p>
 			<p class="p2">
-				<a href="../f">首页</a>&nbsp;|&nbsp;<a href="#">收藏本站</a>&nbsp;|&nbsp;<a
-					href="#">联系我们</a>
+				<script type="text/javascript" src="http://www.shanghai.gov.cn/shanghai/weather.js"></script>
 			</p>
 		</div>
 		<img src="${ctxStatic}/images/top_banner.jpg" />
@@ -40,7 +39,7 @@
 			<a href="../f" class="select">首 页</a>
 			<c:forEach items="${fnc:getMainNavList(site.id)}" var="category"
 				varStatus="status">
-				<c:if test="${status.index lt 6}">
+				<c:if test="${status.index lt 7}">
 					<c:set var="menuCategoryId" value=",${category.id}," />
 					<a href="${category.url}" target="${category.target}"><span>${category.name}</span></a>
 				</c:if>
@@ -71,9 +70,9 @@
 		<div class="foot_div">
 			<div class="foot_div2">
 				<div class="foot_d">
-					<a href="http://desktop.pudong.sh" class="f_tit f1"><img
+					<a href="http://pdxtbg.pudong.sh" class="f_tit f1"><img
 						src="${ctxStatic}/images/b_b1.png">
-					<p>金桥OA</p></a> <a href="#" class="f_tit f2"><img
+					<p>金桥OA</p></a> <a href="http://172.30.208.4:8001/" class="f_tit f2"><img
 						src="${ctxStatic}/images/b_b2.png">
 					<p>用友财务</p></a> <a href="http://www.pudong.gov.cn" class="f_tit f3"><img
 						src="${ctxStatic}/images/b_b3.png">

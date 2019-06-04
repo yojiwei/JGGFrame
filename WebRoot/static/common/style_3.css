@@ -87,7 +87,7 @@ ul li p{}
 .span12{width:100%;}
 .span12 .span10{width:100%;text-align:left;}
 
-.span2{width:20%;}
+.span2{width:20%;height:400px;}
 .span2 li a{margin-left:35px;}
 
 #Tab1{
@@ -148,6 +148,12 @@ padding-top:10px;
 .box4 ul li a{ display:block; width:248px; float:left; text-align:left; font-size:16px; color:#333; text-indent:20px; line-height:24px;}
 .box4 ul li a:hover{ color:#982d07;}
 
+.box4_tit1{width:400px;}
+.box_tit1{ height:20px; margin-top:0px;margin-bottom:20px;}
+.box_tit1 p{ display:block; float:left; font-size:16px; color:#333; margin-left:10px;}
+.box_tit1 a{ display:block; float:right; font-size:14px; color:#ea3411;}
+.box_tit1 img{ float:left; margin-top:3px;}
+
 .box5{ width:536px; height:313px; float:right;}
 .box5 ul{ width:530px; margin-top:15px; float:left; margin-left:15px;}
 .box5 ul li{ width:530px; height:30px; background:url(../images/dd1.png) left center no-repeat;float: left;}
@@ -158,7 +164,7 @@ padding-top:10px;
 .foot_div{ width:1140px; height:190px; background-color:#191919; margin-top:10px;}
 
 .foot_div2{ width:1140px; height:84px; background-color:#282828;}
-.foot_d{ width:1104px; margin-top:25px;}
+.foot_d{ width:1104px; margin-top:25px;margin-left:180px;}
 .f_tit{ width:145px; height:35px; float:left; margin-left:6px; margin-right:6px; display:block; background-color:#333333;}
 .f_tit img{ float:left; margin-left:10px;}
 .f_tit p{ font-size:16px; color:#fff; line-height:35px; display:block; float:left; margin-left:10px;}

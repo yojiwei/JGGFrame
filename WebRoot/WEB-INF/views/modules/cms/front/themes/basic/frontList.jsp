@@ -16,17 +16,17 @@
 
 	<div class="row">
 	   <div class="span2">
-	   	 <h4>栏目列表</h4>
+	   	 <h4>${category.name}</h4>
 		 <ul>
 		 <c:choose>
-		 <c:when test="${categoryList== null || fn:length(categoryList) == 0}">
-<li>无子栏目</li>
-</c:when>
-<c:otherwise>
-<cms:frontCategoryList categoryList="${categoryList}"/>
-</c:otherwise>
-</c:choose>
-
+			<c:when
+				test="${categoryList== null || fn:length(categoryList) == 0}">
+				<li>&nbsp;</li>
+			</c:when>
+			<c:otherwise>
+				<cms:frontCategoryList categoryList="${categoryList}"/>
+			</c:otherwise>
+		 </c:choose>
 		 </ul>
 
 	   </div>
