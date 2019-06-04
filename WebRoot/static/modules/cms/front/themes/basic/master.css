@@ -1,0 +1,52 @@
+/* 公共样式 */
+body { font-family: "微软雅黑", "黑体"  ;margin:0;  padding:0;  font-size:16px; color:#666; background:#fff; }
+div,form,img,ul,ol,li,dl,dt,dd,p {margin: 0; padding: 0; border: 0; }
+li,dl{list-style-type:none;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;font-size:12px; font-weight:normal;}
+.clear{height:0px;line-height:0px;font-size:0px;overflow:hidden;clear:both;}
+a { text-decoration:none}
+a:link {color: #333; text-decoration:none;}
+a:visited {color: #333;text-decoration:none;}
+a:hover {color: #e75001; text-decoration:underline; text-decoration:none}
+
+/*列表页样式*/
+.list{ display:block; background:url(vnavBg.png) left top repeat-y; margin-bottom:20px;}
+.vnav{ display:block; float:left; width:210px;}
+.vnav .title{ height:50px; background-color:#006ec5; font-family:"微软雅黑"; font-size:24px; color:#fff; line-height:50px; text-align:center; overflow:hidden;}
+.vnav ul{ margin-top:20px;}
+.vnav li{ font-family:"微软雅黑"; font-size:18px; color:#333; line-height:50px; text-align:center; border-bottom:1px dashed #d8d8d8; cursor:pointer;}
+#vover{ display:block; height:50px; background:url(vnav_icon.png) 45px center no-repeat; background-color:#f0f0f0; color:#006ec5;}
+
+.mlist{ padding:0 2%; border:1px solid #eee; margin:0 0 0 230px;}
+.mlist .title{ height:49px; background:url(mlist_dot.png) left bottom repeat-x;}
+.mlist .title span{ display:block; width:auto; height:47px; line-height:47px; border-bottom:2px solid #006ec5; font-family:"微软雅黑"; font-size:18px; color:#666; text-align:left;}
+.mlist .title span a.three{color:#555;}
+.mlist .cont{  padding:15px 0;}
+.mlist ul{ padding-bottom:15px;}
+.mlist li{ font-family:"微软雅黑"; font-size:18px; color:#666; height:40px; line-height:40px; overflow:hidden;}
+.mlist li a{}
+.mlist li span{ float:right; color:#999;}
+.zw_gov_nextpage{ height:60px; line-height:60px; border-top:1px solid #e8e8e8; text-align:center; color:#006ec5;}
+.zw_gov_nextpage a{ color:#666666;  padding:0 1.5%; display:inline-block;}
+.zw_gov_nextpage a:hover{ color:#006ec5;}
+.zw_gov_nextpage table{width:100%;}
+
+
+
+
+
+/*详情页样式*/
+.posi{ height:50px; padding:0 1%; font-family:"微软雅黑"; font-size:18px; color:#fff; background-color:#006ec5; line-height:50px; margin-top:20px; overflow:hidden;}
+.detail0{height:auto; border:1px solid #d8d8d8; border-top:none; margin-bottom:20px;}
+.detail{ padding:20px 6% 50px;}
+.detail table{ width:100%;}
+.detail h2{ font-family:"微软雅黑"; font-size:33px; color:#006ec5; text-align:center; line-height:60px; margin-top:20px;}
+.detail h3{ font-family:"微软雅黑"; font-size:28px; color:#006ec5; text-align:center; line-height:50px; margin-top:5px;}
+.detail h5{ font-family:"微软雅黑"; font-size:16px; color:#666; text-align:center; line-height:30px;}
+.separation2{ width:100%; border-bottom:1px solid #d8d8d8; margin-top:10px;}
+.detailP{ display:block; width:48%; margin:0 auto; margin:30px auto 10px auto;}
+.detailP img{ border:1px solid #d8d8d8; padding:5px; width:100%; height:100%;}
+.detail p{ line-height:40px; font-family:"微软雅黑"; font-size:16px; color:#333; text-indent:32px; text-align:justify; text-justify:inter-ideograph;}
+.posi a{ color:#fff;}
+
+

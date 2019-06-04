@@ -1,0 +1,31 @@
+#focus{width:99.7%;height:407px;    
+    overflow: hidden;
+    position: relative;
+    margin-top: 0px;
+    float: left;
+}
+.owl-carousel .owl-item img{width:100%;height:407px;}
+.gqzc_slide .owl-carousel .owl-item img{width:100%;height:369px;   }
+
+ @media screen and ( min-width:1200px)
+		{
+	     
+		}
+    /*鏈�灏忓搴︿负1000px*/	
+	
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+        #focus{ width:48.7%;height:auto;}
+	    .news{ width:48.7%;}
+		.owl-carousel .owl-item img{width:100%;height:300px;}
+		}
+	/*灞忓箷灏忎簬998px澶т簬768px*/
+	@media only screen and (min-width: 480px) and (max-width: 767px){    
+        #focus{ width:100%;height:auto;}
+		.owl-carousel .owl-item img{width:100%;height:300px;}
+	}
+	/*灞忓箷灏忎簬767px澶т簬480px*/
+	@media only screen and (max-width: 479px) {
+     #focus{ width:100%;height:auto;}
+	 .owl-carousel .owl-item img{width:100%;height:300px;}
+    }
+	/*灞忓箷灏忎簬479px*/
