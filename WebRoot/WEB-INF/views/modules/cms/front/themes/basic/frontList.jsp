@@ -16,7 +16,7 @@
 <!-- 左侧栏目树 -->
 	<div class="row">
 	   <div class="span2">
-	   	 <h4>${category.name}</h4>
+	   	 <h4>政务内网</h4>
 		 <ul>
 		 <c:choose>
 			<c:when

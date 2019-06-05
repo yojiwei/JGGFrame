@@ -94,7 +94,12 @@ public class CategoryService extends TreeService<CategoryDao, Category> {
 		}
 		return list;
 	}
-
+	/**
+	 * 获取子栏目列表
+	 * @param parentId
+	 * @param siteId
+	 * @return
+	 */
 	public List<Category> findByParentId(String parentId, String siteId){
 		Category parent = new Category();
 		parent.setId(parentId);
@@ -104,6 +109,7 @@ public class CategoryService extends TreeService<CategoryDao, Category> {
 		entity.setSite(site);
 		return dao.findByParentIdAndSiteId(entity);
 	}
+
 	
 	public Page<Category> find(Page<Category> page, Category category) {
 		category.setPage(page);

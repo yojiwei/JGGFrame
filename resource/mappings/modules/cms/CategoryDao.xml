@@ -243,6 +243,7 @@
 		WHERE id = #{id}
 	</update>
 	
+	
 	<select id="findByParentIdAndSiteId" resultType="Category">
 		SELECT 
 			<include refid="cmsCategoryDaoColumns"/>
@@ -250,16 +251,19 @@
 		<include refid="cmsCategoryDaoJoins"/>
 		<where>
 			a.del_flag = #{DEL_FLAG_NORMAL} 
-			<if test=" site.id != null and site.id != ''">
+			<if test=" site.id != null and site.id != ''"><!-- site.id站点ID -->
 				AND a.site_id  = #{site.id}
 			</if>
-			<if test="parent.id != null and parent.id != ''">
+			<if test="parent.id != null and parent.id != ''"><!-- 父节点ID -->
 				AND a.parent_id  = #{parent.id}
 			</if>
 			and a.in_list = #{FLAG_NORMAL}
 		</where>		
 		order by a.site_id, a.sort
 	</select>
+	
+	
+	
 	<select id="findByParentIdsLike" resultType="Category">
 		SELECT 
 			<include refid="cmsCategoryDaoColumns"/>
