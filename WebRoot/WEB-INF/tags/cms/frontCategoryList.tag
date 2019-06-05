@@ -15,7 +15,9 @@
 	    			</c:otherwise>
 	    		</c:choose>
    			</c:when>
-   			<c:otherwise><c:set var="url" value="${ctx}/list-${tpl.id}${urlSuffix}"/></c:otherwise>
+   			<c:otherwise>
+   			<c:set var="url" value="${ctx}/list-${tpl.id}${urlSuffix}"/>
+   			</c:otherwise>
    		</c:choose>
 		<li  class="${requestScope.category.id eq tpl.id ?'menu_activ':''}">
 			<c:choose>

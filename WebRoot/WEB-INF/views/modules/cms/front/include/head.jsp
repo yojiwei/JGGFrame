@@ -17,4 +17,5 @@
 	<link href="${ctxStaticTheme}/testcss.css" type="text/css" rel="stylesheet" />
 	<link href="${ctxStaticTheme}/owl.carousel.css" type="text/css" rel="stylesheet" />
 	<link href="${ctxStatic}/common/style_3.css" type="text/css" rel="stylesheet" />
+	
 </c:if>
