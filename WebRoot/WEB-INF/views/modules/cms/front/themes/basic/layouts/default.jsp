@@ -70,16 +70,16 @@
 		<div class="foot_div">
 			<div class="foot_div2">
 				<div class="foot_d">
-					<a href="http://pdxtbg.pudong.sh" class="f_tit f1"><img
+					<a href="http://pdxtbg.pudong.sh" target="_blank" class="f_tit f1"><img
 						src="${ctxStatic}/images/b_b1.png">
-					<p>金桥OA</p></a> <a href="http://172.30.208.4:8001/" class="f_tit f2"><img
+					<p>金桥OA</p></a> <a href="http://172.30.208.4:8001/" target="_blank" class="f_tit f2"><img
 						src="${ctxStatic}/images/b_b2.png">
-					<p>用友财务</p></a> <a href="http://www.pudong.gov.cn" class="f_tit f3"><img
+					<p>用友财务</p></a> <a href="http://www.pudong.gov.cn" target="_blank" class="f_tit f3"><img
 						src="${ctxStatic}/images/b_b3.png">
-					<p>浦东门户</p></a> <a href="http://www.pudong.gov.cn/jqz/"
+					<p>浦东门户</p></a> <a href="http://www.pudong.gov.cn/jqz/" target="_blank"
 						class="f_tit f4"><img src="${ctxStatic}/images/b_b4.png">
 					<p>金桥门户</p></a> <a
-						href="${pageContext.request.contextPath}${fns:getAdminPath()}"
+						href="${pageContext.request.contextPath}${fns:getAdminPath()}" target="_blank"
 						class="f_tit f7"><img src="${ctxStatic}/images/b_b7.png">
 					<p>后台管理</p></a>
 				</div>

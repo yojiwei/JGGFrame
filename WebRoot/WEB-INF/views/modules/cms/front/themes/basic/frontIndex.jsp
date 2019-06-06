@@ -120,7 +120,7 @@
 							<img src="${ctxStatic}/images/dd2.png">
 							<p>两学一做</p>
 							<a
-								href="${ctx}/list-66e5c9cc53ab45619f927d3d1dd5ade3${urlSuffix}">更多
+								href="${ctx}/list-c7e65c560b2c4f4996a66f6cfe7aa47e${urlSuffix}">更多
 								&gt;&gt;</a>
 						</div>
 						<div class="box4_con1">
