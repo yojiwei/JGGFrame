@@ -115,38 +115,22 @@
 				</div>
 				<!--子栏目区域-->
 				<div class="p_box">
-					<div class="c_box box4">
+					<div class="c_box box6">
 						<div class="box_tit box4_tit">
 							<img src="${ctxStatic}/images/dd2.png">
 							<p>两学一做</p>
-							<a
-								href="${ctx}/list-c7e65c560b2c4f4996a66f6cfe7aa47e${urlSuffix}">更多
-								&gt;&gt;</a>
+							<a href="${ctx}/list-c7e65c560b2c4f4996a66f6cfe7aa47e${urlSuffix}">更多 &gt;&gt;</a>
 						</div>
-						<div class="box4_con1">
-							<img src="${ctxStatic}/images/bbb1.jpg">
-							<ul>
-								<c:forEach
-									items="${fnc:getArticleList(site.id, '66e5c9cc53ab45619f927d3d1dd5ade3', 8, 'orderBy:\"createDate desc\"')}"
-									var="article">
-									<li><a  title="${article.title}"
-										href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,45)}</a><p class="k"><fmt:formatDate
+						<ul>
+							<c:forEach
+								items="${fnc:getArticleList(site.id, 'c7e65c560b2c4f4996a66f6cfe7aa47e', 8, 'orderBy:\"createDate desc\"')}"
+								var="article">
+								<li><a href="${article.url}" title="${article.title}"
+									style="color:${article.color}">${fns:abbr(article.title,45)}</a>
+								<p class="k"><fmt:formatDate
 											value="${article.createDate}" pattern="yyyy-MM-dd" /></p></li>
-								</c:forEach>
-							</ul>
-						</div>
-						<div class="box4_con2">
-							<img src="${ctxStatic}/images/bbb2.jpg">
-							<ul>
-								<c:forEach
-									items="${fnc:getArticleList(site.id, 'c7e65c560b2c4f4996a66f6cfe7aa47e', 8, 'orderBy:\"createDate desc\"')}"
-									var="article">
-									<li><a  title="${article.title}"
-										href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,45)}</a><p class="k"><fmt:formatDate
-											value="${article.createDate}" pattern="yyyy-MM-dd" /></p></li>
-								</c:forEach>
-							</ul>
-						</div>
+							</c:forEach>
+						</ul>
 					</div>
 					<div class="c_box box5">
 						<div class="box_tit box4_tit">
