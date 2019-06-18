@@ -93,6 +93,14 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
 	}
 	
 	/**
+	 * 替换掉字符串中字符
+	 */
+	public static String replaceStr(String demo,String regex,String replacement) {
+		String s = demo.replaceAll(regex, replacement);
+		return s;
+	}
+	
+	/**
 	 * 替换为手机识别的HTML，去掉样式及属性，保留回车。
 	 * @param html
 	 * @return

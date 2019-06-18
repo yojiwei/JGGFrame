@@ -29,7 +29,7 @@
 									var="article">
 									<div class="item">
 										<a href="${article.url}" title="${article.title}">
-											<img class="p1" src="${article.image}"
+											<img class="p1" src="${fns:replaceStr(article.image,'/_thumbs','')}"
 											title="${fns:abbr(article.title,18)}" />
 											<h4 class="title"
 												style="height: 40px; line-height: 40px; color: #000; text-align: center; background: #d8d8d8;">

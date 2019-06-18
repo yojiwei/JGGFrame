@@ -171,6 +171,7 @@ public class CmsUtils {
 			if (StringUtils.isNotBlank((String)map.get("orderBy"))){
 				page.setOrderBy((String)map.get("orderBy"));
 			}
+			
 		}
 		article.setDelFlag(Article.DEL_FLAG_NORMAL);
 		page = articleService.findPage(page, article, false);

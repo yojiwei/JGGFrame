@@ -204,6 +204,13 @@
     <example>${fns:replaceHtml(html)}</example>  
   </function>
   <function>
+    <description>替换掉String字符串中特殊字符标签</description>
+    <name>replaceStr</name>
+    <function-class>com.thinkgem.jeesite.common.utils.StringUtils</function-class>
+    <function-signature>java.lang.String replaceStr(java.lang.String,java.lang.String,java.lang.String)</function-signature>
+    <example>${fns:replaceStr(demo,regex,replacement)}</example>  
+  </function>
+  <function>
     <description>转换为JS获取对象值，生成三目运算返回结果。</description>
     <name>jsGetVal</name>
     <function-class>com.thinkgem.jeesite.common.utils.StringUtils</function-class>
