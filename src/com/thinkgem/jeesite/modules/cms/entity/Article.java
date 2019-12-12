@@ -46,7 +46,16 @@ public class Article extends DataEntity<Article> {
    	private String viewConfig;	// 视图参数
    	private String filename;
    	private String filepath;
+   	private String filehz;//附件后缀
 
+   	public String getFilehz() {
+		return filehz;
+	}
+
+	public void setFilehz(String filehz) {
+		this.filehz = filehz;
+	}
+	
 	public String getFilename() {
 		return filename;
 	}

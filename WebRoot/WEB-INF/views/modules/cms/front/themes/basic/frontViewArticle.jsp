@@ -70,11 +70,20 @@
 							<c:if test="${not empty article.files}">
 			附件：
 				<c:forEach items="${fileList}" var="filelist">
-									<div>
-										<span style="cursor:pointer;" onclick="show('${ctxStatic}/pdfjs/web/viewer.html?file=${filelist[0]}')">${filelist[1]}</span>&nbsp;
-									</div>
+<c:choose>
+<c:when test="${fileList[2] eq 'pdf' || fileList[2] eq 'PDF'}">
+<div>
+	<span style="cursor:pointer;" onclick="show('${ctxStatic}/pdfjs/web/viewer.html?file=${filelist[0]}')">${filelist[1]}</span>&nbsp;
+</div>
+		</c:when>
+		<c:otherwise>
+<div>
+<span style="cursor:pointer;"><a href="${filelist[0]}">${filelist[1]}</a></span>&nbsp;
+</div>
+</c:otherwise>
+</c:choose>
 								</c:forEach>
-							</c:if>
+					</c:if>
 						</div>
 
 

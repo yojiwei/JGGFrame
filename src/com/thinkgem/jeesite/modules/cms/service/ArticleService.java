@@ -157,13 +157,16 @@ public class ArticleService extends CrudService<ArticleDao, Article> {
 		String filess_path = "";
 		String filess_realpath = "";
 		String filess_name = "";
+		String filess_hz = "";//附件后缀
 		try{
 			for(int i=0;i<filess.length;i++){
 				filess_realpath = filess[i];
 				filess_path = URLDecoder.decode(filess[i],"UTF-8");
 				filess_name = filess_path.substring(filess_path.lastIndexOf("/")+1,filess_path.length());
+				filess_hz = filess_name.substring(filess_name.lastIndexOf(".")+1,filess_name.length());
 				e.setFilename(filess_name);
 				e.setFilepath(filess_realpath);
+				e.setFilehz(filess_hz);
 				list.add(new Object[]{e.getFilepath(),e.getFilename()});
 			}
 		}catch(Exception ex){
