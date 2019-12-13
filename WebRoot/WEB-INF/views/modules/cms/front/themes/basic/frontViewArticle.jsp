@@ -78,7 +78,7 @@
 		</c:when>
 		<c:otherwise>
 <div>
-<span style="cursor:pointer;"><a href="${filelist[0]}">${filelist[1]}</a></span>&nbsp;
+<span style="cursor:pointer;" onclick="openDownloadDialog('${filelist[0]}','${filelist[1]}')">${filelist[1]}</span>&nbsp;
 </div>
 </c:otherwise>
 </c:choose>
@@ -96,6 +96,46 @@
 		var localhostPath = curWwwPath.substring(0, pos);
 		window.open(filepath);
 	}
+	function openDownloadDialog(url, saveName) {
+    if (window.navigator.msSaveBlob) {
+        try {
+            //创建XMLHttpRequest对象
+            var xhr = new XMLHttpRequest();
+            //配置请求方式、请求地址以及是否同步
+            xhr.open('POST', url, true);
+            //设置请求结果类型为blob
+            xhr.responseType = 'blob';
+            //请求成功回调函数
+            xhr.onload = function(e) {
+                if (this.status == 200) {//请求成功
+                    //获取blob对象
+                    var blob = this.response;
+                    //获取blob对象地址，并把值赋给容器
+                    window.navigator.msSaveBlob(blob, saveName);
+                }
+            };
+            xhr.send();
+        }catch (e) {
+            console.log(e);
+        }
+    }else {
+    	if (typeof url == 'object' && url instanceof Blob) {
+            url = URL.createObjectURL(url); // 创建blob地址
+        }
+        var aLink = document.createElement('a');
+        aLink.href = url;
+        aLink.download = saveName || '';
+        var event;
+        if (window.MouseEvent) {
+            event = new MouseEvent('click');
+        }
+        else {
+            event = document.createEvent('MouseEvents');
+            event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        }
+        aLink.dispatchEvent(event);
+    }
+}
 </script>
 
 
