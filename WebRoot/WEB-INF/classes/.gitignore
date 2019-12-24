@@ -1,10 +1,6 @@
 /act/
 /cache/
 /com/
-/editor.html
-/errors.properties
-/jeesite.properties
-/log4j.properties
 /mappings/
 /mybatis-config.xml
 /mybatis-refresh.properties
